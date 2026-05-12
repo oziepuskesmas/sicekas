@@ -21,6 +21,15 @@
         @keyframes barFill { 0%{width:0} 80%{width:85%} 100%{width:100%} }
         @keyframes fadeUp { from{opacity:0;transform:translateY(20px)} to{opacity:1;transform:translateY(0)} }
         @keyframes shimmer { 0%{background-position:-200px 0} 100%{background-position:200px 0} }
+        @keyframes floatPulseLogo {
+            0% { transform: translateY(0px) scale(1); filter: drop-shadow(0 4px 6px rgba(0,0,0,0.15)); }
+            50% { transform: translateY(-4px) scale(1.05); filter: drop-shadow(0 8px 12px rgba(0,0,0,0.25)); }
+            100% { transform: translateY(0px) scale(1); filter: drop-shadow(0 4px 6px rgba(0,0,0,0.15)); }
+        }
+        .anim-logo {
+            animation: floatPulseLogo 3s ease-in-out infinite;
+            border-radius: 8px;
+        }
 
         .sp-icon {
             width: 90px; height: 90px; border-radius: 24px;
@@ -63,10 +72,7 @@
     <!-- SPLASH LOADING -->
     <div id="splash">
         <div class="sp-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" fill="white" class="bi bi-hospital" viewBox="0 0 16 16">
-                <path d="M8.5 5.034v1.1l.953-.55.5.867L9 7l.953.55-.5.866-.953-.55v1.1h-1v-1.1l-.953.55-.5-.866L7 7l-.953-.55.5-.866.953.55v-1.1zM13.25 9a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h.5a.25.25 0 0 0 .25-.25v-.5a.25.25 0 0 0-.25-.25zM13 11.25a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25zm-2.25-2.25a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h.5a.25.25 0 0 0 .25-.25v-.5a.25.25 0 0 0-.25-.25zm0 2.5a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h.5a.25.25 0 0 0 .25-.25v-.5a.25.25 0 0 0-.25-.25zM3.5 9a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h.5a.25.25 0 0 0 .25-.25v-.5a.25.25 0 0 0-.25-.25zM3 11.25a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25z"/>
-                <path d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v1h1a1 1 0 0 1 1 1v10.5a1.5 1.5 0 0 1-1.5 1.5h-1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-1h-1A1.5 1.5 0 0 1 0 13.5V3a1 1 0 0 1 1-1zm2 13h8v1H4zm2-13a1 1 0 0 0-1 1v.6h.5a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-.5.5H5v.5a.5.5 0 0 0 .5.5h5a.5.5 0 0 0 .5-.5v-.5h-.5a.5.5 0 0 1-.5-.5v-8a.5.5 0 0 1 .5-.5h.5V2a1 1 0 0 0-1-1zm-4 3v8.5a.5.5 0 0 0 .5.5h.5v-9zM12 4.6v9h.5a.5.5 0 0 0 .5-.5V3h-.5z"/>
-            </svg>
+            <img src="https://i.imgur.com/F730Q7f.png" class="anim-logo" style="width: 52px; height: auto;">
         </div>
         <div class="sp-title">
             <h1>SICEKAS</h1>
